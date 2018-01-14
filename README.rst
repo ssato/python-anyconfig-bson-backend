@@ -2,7 +2,7 @@
 python-anyconfig-bson-backend
 ================================
 
-.. image:: https://img.shields.io/pypi/v/anyconfig-bson-backend.svg
+.. .. image:: https://img.shields.io/pypi/v/anyconfig-bson-backend.svg
    :target: https://pypi.python.org/pypi/anyconfig-bson-backend/
    :alt: [Latest Versbson]
 
