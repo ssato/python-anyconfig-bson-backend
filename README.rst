@@ -18,8 +18,8 @@ python-anyconfig-bson-backend
    :target: https://landscape.io/github/ssato/python-anyconfig-bson-backend/master
    :alt: Code Health
 
-This is a backend module for python-anyconfig to add support of load and dump
-BSON files w/ using pymongo, https://pypi.python.org/pypi/pymongo/.
+This is a backend module for python-anyconfig to load and dump BSON files w/
+using pymongo, https://pypi.python.org/pypi/pymongo/ [#]_ .
 
 - Author: Satoru SATOH <ssato@redhat.com>
 - License: MIT
@@ -35,6 +35,8 @@ SEE ALSO:
   - PyPI: https://pypi.python.org/pypi/anyconfig-bson-backend
   - Copr RPM repos: https://copr.fedoraproject.org/coprs/ssato/python-anyconfig/
 
+.. [#] bson from pymongo package may work and bson, https://pypi.python.org/pypi/bson/, does not.
+
 Build & Install
 ================
 
@@ -46,7 +48,7 @@ or::
 
   $ python setup.py rpm
 
-and install built RPMs. 
+and install built RPMs.
 
 Otherwise, try usual ways to build and/or install python modules such like
 'python setup.py bdist', etc.
