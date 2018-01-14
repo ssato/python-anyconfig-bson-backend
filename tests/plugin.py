@@ -13,7 +13,7 @@ import unittest
 import anyconfig
 import anyconfig.backends
 
-from tests.common import _bytes, dicts_equal
+from tests.common import dicts_equal
 
 
 _CURDIR = os.path.dirname(__file__)
