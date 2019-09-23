@@ -18,8 +18,8 @@ python-anyconfig-bson-backend
    :target: https://landscape.io/github/ssato/python-anyconfig-bson-backend/master
    :alt: Code Health
 
-This is a backend module for python-anyconfig to load and dump BSON files w/
-using pymongo, https://pypi.python.org/pypi/pymongo/ [#]_ .
+This is a backend module for python-anyconfig to load and dump BSON files using
+pymongo, https://pypi.python.org/pypi/pymongo/ [#]_ .
 
 - Author: Satoru SATOH <ssato@redhat.com>
 - License: MIT
@@ -40,17 +40,17 @@ SEE ALSO:
 Build & Install
 ================
 
-If you're Fedora or Red Hat Enterprise Linux user, try::
+- Pre-built Binary RPMs from my copr repos, https://copr.fedoraproject.org/coprs/ssato/python-anyconfig/
 
-  $ python setup.py srpm && mock dist/<package>-<ver_dist>.src.rpm
-  
-or::
+  ::
 
-  $ python setup.py rpm
+    # Example commands to install pre-built RPMs
+    $ sudo dnf copr enable ssato/python-anyconfig
+    $ sudo dnf install -y python3-anyconfig-bson-backend
 
-and install built RPMs.
-
-Otherwise, try usual ways to build and/or install python modules such like
-'python setup.py bdist', etc.
+- PyPI: pip3 install anyconfig-bson-backend
+- pip from git repo: pip3 install git+https://github.com/ssato/python-anyconfig-bson-backend/
+- Build SRPMs, RPMs and install it: python3 setup.py bdist_rpm --source-only && mock dist/python3-anyconfig-\*-backend-<ver_dist>.src.rpm
+- Others: try usual ways to build and/or install python modules such like 'python3 setup.py bdist', etc.
 
 .. vim:sw=2:ts=2:et:
