@@ -68,6 +68,7 @@ class Parser(anyconfig.backend.base.StringParser,
     """
     Loader/Dumper of BSON files.
     """
+    _cid = "pymongo"
     _type = "bson"
     _extensions = ["bson", "bsn"]  # Temporary.
     _load_opts = [] if bson.has_c() else ["codec_options"]
