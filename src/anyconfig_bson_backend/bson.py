@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2015 - 2018 Satoru SATOH <ssato @ redhat.com>
+# Copyright (C) 2015 - 2020 Satoru SATOH <satoru.satoh @ gmail.com>
 # License: MIT
 #
 # Ref. python -c "import bson; help(bson)"
