@@ -14,26 +14,26 @@ python-anyconfig-bson-backend
    :target: https://coveralls.io/r/ssato/python-anyconfig-bson-backend
    :alt: Coverage Status
 
-.. image:: https://landscape.io/github/ssato/python-anyconfig-bson-backend/master/landscape.png
+.. image:: https://scrutinizer-ci.com/g/ssato/python-anyconfig-bson-backend/badges/quality-score.png
+   :target: https://scrutinizer-ci.com/g/ssato/python-anyconfig-bson-backend
+   :alt: [Code Quality by Scrutinizer]
+
+.. landscape looks stopped their service.
+.. .. image:: https://landscape.io/github/ssato/python-anyconfig-bson-backend/master/landscape.png
    :target: https://landscape.io/github/ssato/python-anyconfig-bson-backend/master
    :alt: Code Health
 
 This is a backend module for python-anyconfig to load and dump BSON files using
-pymongo, https://pypi.python.org/pypi/pymongo/ [#]_ .
+pymongo.
 
 - Author: Satoru SATOH <ssato@redhat.com>
 - License: MIT
 
 SEE ALSO:
 
-- python-anyconfig: https://pypi.python.org/pypi/anyconfig
+- python-anyconfig: https://pypi.python.org/pypi/anyconfig/
 - pymongo: https://pypi.python.org/pypi/pymongo/
-- BSON spec: http://bsonspec.org/
-
-- Download:
-
-  - PyPI: https://pypi.python.org/pypi/anyconfig-bson-backend
-  - Copr RPM repos: https://copr.fedoraproject.org/coprs/ssato/python-anyconfig/
+- BSON spec: http://bsonspec.org
 
 .. [#] bson from pymongo package may work and bson, https://pypi.python.org/pypi/bson/, does not.
 
