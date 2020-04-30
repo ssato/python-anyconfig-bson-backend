@@ -13,6 +13,7 @@ for pyf in glob.glob("src/*/__init__.py"):
                                     for l in open(pyf)) if m]
     if matches:
         VERSION = matches[0][0]
+        break
 
 assert VERSION
 
