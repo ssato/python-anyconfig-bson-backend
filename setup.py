@@ -1,3 +1,5 @@
+"""setup.py to build packages.
+"""
 from __future__ import absolute_import
 
 import glob
@@ -38,6 +40,7 @@ def _replace(line):
     return line
 
 
+# pylint: disable=invalid-name
 class bdist_rpm(setuptools.command.bdist_rpm.bdist_rpm):
     """Override the default content of the RPM SPEC.
     """
