@@ -8,9 +8,12 @@ CURDIR=$(pwd)
 PKG_NAME=${PKG_NAME:-$(sed -n 's/name = //p' ${BATS_TEST_DIRNAME:?}/../setup.cfg)}
 GIT_URL=${GIT_URL:-https://github.com/ssato/python-${PKG_NAME}}
 
-RPM_BUILD_DIST=fedora-$(
-sed -nr 's/^Fedora release ([[:digit:]]+) .+/\1/p' /etc/fedora-release
-)-$(arch)
+RPM_BUILD_DIST=
+release=$(sed -nr 's/^Fedora release ([[:digit:]]+) .+/\1/p' /etc/fedora-release || echo 'NG')
+test "x${release}" = "xNG" || {
+    arch=$(arch)
+    RPM_BUILD_DIST=fedora-${release}-${arch:?}
+}
 
 SRCDIR=${BATS_TEST_DIRNAME}/../
 WORKDIR=${WORKDIR:-}
@@ -53,6 +56,7 @@ function teardown () {
     run python3 setup.py bdist_rpm --source-only
     [[ ${status} -eq 0 ]]
 
+    test -n ${RPM_BUILD_DIST} || skip
     which mock 2>/dev/null >/dev/null || skip
     run mock -r ${RPM_BUILD_DIST:?} $(ls -1t dist/*.src.rpm | head -n 1)
     [[ ${status} -eq 0 ]]
