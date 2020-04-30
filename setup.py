@@ -20,7 +20,7 @@ for pyf in glob.glob("src/*/__init__.py"):
 assert VERSION
 
 # For daily snapshot versioning mode:
-RELEASE = "1"
+RELEASE = "1%{?dist}"
 if os.environ.get("_SNAPSHOT_BUILD", None) is not None:
     import datetime
     RELEASE = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
