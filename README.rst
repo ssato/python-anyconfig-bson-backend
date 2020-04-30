@@ -26,7 +26,7 @@ python-anyconfig-bson-backend
 This is a backend module for python-anyconfig to load and dump BSON files using
 pymongo.
 
-- Author: Satoru SATOH <ssato@redhat.com>
+- Author: Satoru SATOH <satoru.satoh@gmail.com>
 - License: MIT
 
 SEE ALSO:
