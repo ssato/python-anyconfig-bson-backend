@@ -25,7 +25,7 @@ _CNF_0 = {u'a': 0,
 
 class Test(unittest.TestCase):
 
-    conf_path = os.path.join(_CURDIR, "0.bson")
+    conf_path = os.path.join(_CURDIR, "res", "0.bson")
 
     def test_20_load(self):
         try:
