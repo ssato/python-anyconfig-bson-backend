@@ -1,6 +1,7 @@
 include *.txt
 include LICENSE.MIT
 include MANIFEST.in
+include NEWS
 include README.*
 include pkg/*
 include setup.*
