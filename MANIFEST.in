@@ -3,5 +3,6 @@ include MANIFEST.in
 include README.*
 include pkg/*
 include setup.*
+include requirements.*
 recursive-include src *.py
-recursive-include tests *.py *.bson *.bats
+recursive-include tests *.py *.bson *.bats *.txt
