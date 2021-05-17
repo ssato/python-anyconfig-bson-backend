@@ -11,7 +11,6 @@ import pkg_resources
 import unittest
 
 import anyconfig
-import anyconfig.backends
 
 from tests.common import dicts_equal
 
