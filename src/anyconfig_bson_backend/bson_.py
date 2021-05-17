@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2015 - 2020 Satoru SATOH <satoru.satoh @ gmail.com>
+# Copyright (C) 2015 - 2021 Satoru SATOH <satoru.satoh @ gmail.com>
 # License: MIT
 #
 # Ref. python -c "import bson; help(bson)"
@@ -42,8 +42,6 @@ Changelog:
 
     .. versionadded:: anyconfig-0.1.0
 """
-from __future__ import absolute_import
-
 import bson
 import anyconfig.backend.base
 import anyconfig.utils
@@ -64,7 +62,8 @@ def _codec_options(**options):
 
 
 class Parser(anyconfig.backend.base.StringParser,
-             anyconfig.backend.base.BinaryFilesMixin):
+             anyconfig.backend.base.BinaryLoaderMixin,
+             anyconfig.backend.base.BinaryDumperMixin):
     """
     Loader/Dumper of BSON files.
     """
