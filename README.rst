@@ -6,9 +6,9 @@ python-anyconfig-bson-backend
    :target: https://pypi.python.org/pypi/anyconfig-bson-backend/
    :alt: [Latest Versbson]
 
-.. image:: https://img.shields.io/travis/ssato/python-anyconfig-bson-backend.svg
-   :target: https://travis-ci.org/ssato/python-anyconfig-bson-backend
-   :alt: Test status
+.. image:: https://github.com/ssato/python-anyconfig-bson-backend/workflows/Tests/badge.svg
+   :target: https://github.com/ssato/python-anyconfig-bson-backend/actions?query=workflow%3ATests
+   :alt: [Github Actions: Test status]
 
 .. image:: https://img.shields.io/coveralls/ssato/python-anyconfig-bson-backend.svg
    :target: https://coveralls.io/r/ssato/python-anyconfig-bson-backend
